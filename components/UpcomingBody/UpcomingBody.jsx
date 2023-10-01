@@ -1,7 +1,6 @@
 import "./upcomingBody.css";
-import Image1 from "@/public/Assets/photo.svg";
-import Image2 from "@/public/Assets/photo2.svg";
-import Image3 from "@/public/Assets/photo3.svg";
+import Image2 from "../../public/Assets/Photo2.svg";
+import Image3 from "../../public/Assets/Photo3.svg";
 
 import UpcomingCard from "../upComingCard/UpcomingCard";
 
