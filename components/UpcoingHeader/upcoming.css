@@ -1,0 +1,95 @@
+.upcoming__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upcoming__left-box h3 {
+  font-family: var(--fontInter);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 49.5px;
+  text-align: center;
+  color: #1c2129;
+}
+.upcoming__left-box h5 {
+  font-family: var(--fontInter);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: var(--mainBlue);
+  text-align: center;
+}
+
+.upcoming__right-box h3 {
+  font-size: 170px;
+  color: transparent;
+  -webkit-text-stroke: 2px #f4f4f4;
+  font-weight: 800;
+  font-family: var(--fontFamily);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: #bbe670;
+  background: linear-gradient(to right, #bbe670 0%, #ffffff 49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.upcoming__right-box button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: var(--mainDark);
+  padding: 19px 51px 20px 51px;
+  gap: 10px;
+  font-family: var(--fontParagraph);
+  font-size: 22px;
+  font-weight: 600;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+}
+
+@media screen and (max-width: 991px) {
+  .upcoming__container {
+    flex-direction: column;
+  }
+  .upcoming__left-box h5 {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 8px;
+  }
+  .upcoming__left-box h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .upcoming__right-box button {
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+  .upcoming__right-box h3 {
+    font-size: 115px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .upcoming__container {
+    flex-direction: column;
+  }
+  .upcoming__left-box h5 {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+  .upcoming__left-box h3 {
+    font-size: 30px;
+  }
+  .upcoming__right-box button {
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+  .upcoming__right-box h3 {
+    font-size: 80px;
+  }
+}

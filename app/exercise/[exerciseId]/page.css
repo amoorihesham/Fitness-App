@@ -1,0 +1,39 @@
+.exercise__heading {
+  background-color: var(--mainDark);
+  color: white;
+  font-family: var(--fontFamily);
+  font-weight: 800;
+  line-height: 32px;
+  padding: 10px;
+}
+.exercise__heading span {
+  color: var(--mainGreen);
+}
+.related__muscles {
+  background-color: var(--mainDark);
+  color: var(--mainDarkGray);
+  font-size: 22px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 10px 15px;
+  font-family: var(--fontInter);
+  font-weight: 500;
+}
+
+.related__muscles span {
+  color: var(--mainGreen);
+}
+
+.instructions {
+  background-color: var(--mainDark);
+  color: var(--mainGreen);
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0 15px 10px 15px;
+  font-family: var(--fontInter);
+  font-weight: 300;
+}
+.instructions ul li:not(:last-of-type) {
+  margin-bottom: 15px;
+}
