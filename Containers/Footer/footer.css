@@ -1,7 +1,7 @@
-.footer .holder{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-    gap: 25px;
+.footer .holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
 }
 .footer__logo {
   color: white;
@@ -59,4 +59,13 @@
   font-family: var(--fontParagraph);
   font-size: 18px;
   font-weight: 900;
+}
+
+@media (max-width: 300px) {
+  .footer .holder {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .contact__box{
+    padding: 20px;
+  }
 }

@@ -7,7 +7,7 @@ const BodyParts = ({ data, getByBodyPart }) => {
   return (
     <div className="row g-3 row__bodyParts-horizontal py-2">
       {data?.map((cate) => (
-        <div className="col col-md-2 m-0" key={cate}>
+        <div className="col-md-3 col-xxl-2 m-0" key={cate}>
           <div
             className="Exe-Box text-white text-center p-2"
             onClick={() => {

@@ -29,15 +29,12 @@ const SearchBox = ({ allBodyParts, spcifiedList }) => {
 
   return (
     <>
-      <div className=" w-75 m-auto mb-5">
-        <form
-          className="d-flex align-items-center justify-content-between gap-3"
-          onSubmit={handleSubmit}
-        >
+      <div className="mb-5">
+        <form className="d-flex" onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Search Exercises"
-            className="form-control"
+            className="form-control me-2"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
