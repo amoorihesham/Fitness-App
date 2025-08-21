@@ -22,9 +22,10 @@ const Navbar = () => {
           </Link>
         </div>
         <div className='flex items-center gap-x-6'>
-          {navigations.map(({ href, Icon }) => (
+          {navigations.map(({ href, Icon, id }) => (
             <Link
               href={href}
+              key={id}
               className={cn(
                 'capitalize text-lg font-medium text-muted-foreground group hover:bg-primary hover:text-background size-10 flex items-center justify-center rounded-full',
                 pathname === href && 'bg-primary text-background'
