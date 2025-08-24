@@ -1,12 +1,19 @@
 import type { Metadata } from 'next';
-import { Teko } from 'next/font/google';
+import { Lato, Inter } from 'next/font/google';
 import Navbar from '@/components/layout/Navbar';
 import './globals.css';
+import Footer from '@/components/layout/Footer';
 
-const teko = Teko({
-  variable: '--font-teko',
+const lato = Lato({
+  variable: '--font-lato',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '700', '900'],
+});
+
+const inter = Inter({
+  variable: '--font-inter',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -21,9 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${teko.variable} antialiased`}>
+      <body className={`${lato.variable} ${inter.variable} antialiased`}>
         <Navbar />
         <main className='min-h-[calc(100dvh-77px)]'>{children}</main>
+        <Footer />
       </body>
     </html>
   );
