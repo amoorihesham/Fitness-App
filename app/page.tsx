@@ -534,7 +534,7 @@ export default function Home() {
                   HOT SHOWERS & HAIR CARE
                 </div>
                 <p className='text-xl font-medium last: text-white mt-[10px] max-w-[300px] lg:max-w-[562px]'>
-                  what your body craves in the morning, you're not alone. The majority of people crank the handle all the way up.
+                  what your body craves in the morning, you&apos;re not alone. The majority of people crank the handle all the way up.
                 </p>
               </div>
             </div>
